@@ -4,13 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.scss">
+    <link rel="stylesheet" href="/css/index.css">
+
 
     <title>SCSS Lab</title>
 </head>
 
 <body>
-    <h1>SCSS Lab</h1>
+
+    <nav class="navbar mb-4 bg-yellow-light-9 ">
+        <div class="container">
+            <h6 class="site-title text-orange">Shinobi CSS</h6>
+            <p>a lightweight CSS library for dev ninjas</p>
+        </div>
+    </nav>
+
+    <div class="container"> <!--se under grid.scss-->
+        <h1><a href="#">SCSS Lab</a></h1>
+
+        <h2><a href="#">hello</a></h2>
+
+        <hr class="mt-4 mb-4">
+
+        <h3>hello</h3>
+        
+        <hr class="mt-4 mb-4">
+
+        <h4>buttons with mixins</h4>
+        <a href="#" class="btn">default btn</a>
+        <a href="#" class="btn-red text-white">click me</a>
+        <a href="#" class="btn-yellow text-white">click me</a>
+        <a href="#" class="btn-green text-white">click me</a>
+        <a href="#" class="btn-purple text-white">click me</a>
+        <a href="#" class="btn-pink text-white">click me</a>
+        <a href="#" class="btn-orange text-white">click me</a>
+        <a href="#" class="btn-brown text-white">click me</a>
+        <a href="#" class="btn-outline-purple text-purple text-hover-white">click me</a>
+        <a href="#" class="btn-outline-orange text-orange text-hover-white">click me</a>
     
-</body>
+        <hr class="mt-4 mb-4">
+
+        <h4>buttons with function</h4>
+        <a href="#" class="btn-complement-purple">click me</a>
+        <a href="#" class="btn-complement-red">click me</a>
+
+        <hr class="mt-4 mb-4">
+
+        <h4 class="mb-2">Font sizes</h4>
+        <div class="font-sm">this is small font</div>
+        <div class="font-md">this is medium font</div>
+        <div class="font-lg">this is large font</div>
+        <div class="font-xl">this is extra large font</div>
+        <div class="font-xxl">this is extra, extra large font</div>
+
+        <hr class="mt-4 mb-4">
+
+        <h4>Breakpoints responsive-test</h4>
+
+        <div class="responsive-test">changing colors</div>
+
+        <hr class="mt-4 mb-4">
+
+        <h4 class="mb-2">Grid system</h4>
+        <div class="row">
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card mr-1 mb-1">
+                  <h5 class="card-title">Hello, ninjas</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card mr-1 mb-1">
+                  <h5 class="card-title">Hello, ninjas</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card mr-1 mb-1">
+                  <h5 class="card-title">Hello, ninjas</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card mr-1 mb-1">
+                  <h5 class="card-title">Hello, ninjas</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="mt-4 mb-4">
+    </div> <!--end of .container-->
 </html>

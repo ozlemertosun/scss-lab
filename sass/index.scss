@@ -1,0 +1,88 @@
+
+//.scss
+@use 'sass:math';
+
+
+//variables & functions
+@import 'functions'; 
+@import 'variables'; 
+
+//font-sizes
+@import 'fonts';
+
+//boderSyle
+@import 'borderStyle';
+
+//color-classes with scales
+@import 'colors';
+
+//button mixins
+@import 'button';
+
+//utilities (margin, padding, opacity
+@import 'utilities';
+
+@import  'breakpoints';
+@import  'grid';
+
+@import 'navbar'; 
+
+
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    color:$header;
+    font-size: $font-size-xl;
+    a{
+        color:$header;
+        text-decoration: none;
+    &:hover{
+        color: $hover;
+        border: solid 1px pink;
+        padding: 10px;
+        }
+    }
+} 
+
+h2{
+    color: $line-trough;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: $font-size-l;
+    a{
+        color: $line-trough;
+        text-decoration: line-through;
+        &:hover{
+            color: $hover;
+            border: solid 1px pink;
+            padding: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+h3{
+    border: math.div($base-border-thickness, 2) solid $base-border-color;
+    border-radius: math.div($base-border-radius, 2);
+    background-color: map-get($colors, "yellow");
+}
+
+.card{
+    border: 1px solid $base-border-color;
+}
+
+// @debug "hello ninjas";
+// @debug math.div(10,3);
+// @debug math.floor(2.6);
+
+// @debug map-get($colors,"yellow"); giver farvekoden
+
+// @debug map-has-key($colors,"kakhi") true or false
+
+
+
+
+

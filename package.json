@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/ozlemertosun/scss-lab/issues"
   },
-  "homepage": "https://github.com/ozlemertosun/scss-lab#readme"
+  "homepage": "https://github.com/ozlemertosun/scss-lab#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "gulp-purgecss": "^4.0.3"
+  }
 }
